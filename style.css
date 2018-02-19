@@ -3,12 +3,14 @@
 body {
     margin: 0 auto;
     max-width: 600px;
+    margin-bottom: 3em;
 }
 
 h1 {
     font-family: 'Amatic SC', cursive;
     font-size: 5em;
     text-align: center;
+    margin-top: 0.3em;
     margin-bottom: 0;
 }
 
