@@ -1,0 +1,9 @@
+#container {
+    display: block;
+    width: 1080px;
+}
+
+.box {
+    margin: 0.5em;
+    float: left;
+}
