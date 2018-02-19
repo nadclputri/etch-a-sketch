@@ -16,7 +16,7 @@ function newGrid(num) {
     let boxes = document.querySelectorAll(".grid");
     boxes.forEach(square => {
         square.addEventListener("mouseover", function(event) {
-            event.target.style.background = "blue";
+            event.target.style.background = "#ffa664";
         });
     });
 }
