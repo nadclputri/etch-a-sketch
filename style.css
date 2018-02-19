@@ -7,10 +7,15 @@ body {
 
 h1 {
     font-family: 'Amatic SC', cursive;
+    font-size: 5em;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 p {
     font-family: 'Josefin Slab', serif;
+    text-align: center;
+    margin-bottom: 3em;
 }
 
 #container {
