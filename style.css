@@ -1,9 +1,11 @@
 #container {
-    display: block;
-    width: 1080px;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 600px;
 }
 
-.box {
-    margin: 0.5em;
-    float: left;
+#container > div {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
 }
