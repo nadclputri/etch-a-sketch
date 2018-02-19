@@ -8,9 +8,6 @@ function newGrid(num) {
 
             document.getElementById("container").appendChild(div);
         }
-
-        let jump = document.createElement("br");
-        document.getElementById("container").appendChild(jump);
     }
 
     let boxes = document.querySelectorAll(".grid");
@@ -19,6 +16,11 @@ function newGrid(num) {
             event.target.style.background = "#ffa664";
         });
     });
+}
+
+function clearGrid() {
+    let newBox = prompt("Squares for new grid: ");
+    newGrid(newBox);
 }
 
 newGrid(16);
