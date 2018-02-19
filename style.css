@@ -20,6 +20,20 @@ p {
     margin-bottom: 3em;
 }
 
+button {
+    background: #bb4b4b;
+    color:#fff;
+    border: none;
+    margin-bottom: 1em;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3em;
+    padding: 0.3em 0.7em;
+}
+
+#reset {
+    text-align: center;
+}
+
 #container {
     display: flex;
     flex-flow: row wrap;
