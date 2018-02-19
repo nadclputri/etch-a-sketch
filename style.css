@@ -30,6 +30,10 @@ button {
     padding: 0.3em 0.7em;
 }
 
+button:hover {
+    opacity: 0.6;
+}
+
 #reset {
     text-align: center;
 }
