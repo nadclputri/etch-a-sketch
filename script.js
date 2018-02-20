@@ -20,7 +20,11 @@ function newGrid(num) {
 
 function clearGrid() {
     let newBox = prompt("Squares for new grid: ");
+    document.getElementById("container").style.setProperty("--colNum", newBox);
+    document.getElementById("container").style.setProperty("--rowNum", newBox);
     newGrid(newBox);
 }
 
 newGrid(16);
+document.getElementById("container").style.setProperty("--colNum", 16);
+document.getElementById("container").style.setProperty("--rowNum", 16);
