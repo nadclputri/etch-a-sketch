@@ -2,7 +2,6 @@ function newGrid(num) {
     for (var i=0; i<num; i++) {
         for (var j=0; j<num; j++) {
             let div = document.createElement("div");
-            div.style.background = "#666666";
             div.style.border = "#000";
             div.className = "grid";
 
@@ -12,17 +11,24 @@ function newGrid(num) {
 
     let boxes = document.querySelectorAll(".grid");
     boxes.forEach(square => {
-        square.addEventListener("mouseover", function(event) {
-            event.target.style.background = "#ffa664";
+        square.addEventListener("mouseenter", function() {
+            square.classList.add("hovergrid");
+            console.log(square.classList);
         });
     });
 }
 
 function clearGrid() {
-    let newBox = prompt("Squares for new grid: ");
-    document.getElementById("container").style.setProperty("--colNum", newBox);
-    document.getElementById("container").style.setProperty("--rowNum", newBox);
-    newGrid(newBox);
+    let num = prompt("Squares for new grid: ");
+    let boxes = document.querySelectorAll(".grid");
+    boxes.forEach(square => {
+        square.classList.remove("hovergrid");
+    });
+
+    newGrid(num);
+
+    document.getElementById("container").style.setProperty("--colNum", num);
+    document.getElementById("container").style.setProperty("--rowNum", num);
 }
 
 newGrid(16);
