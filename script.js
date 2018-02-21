@@ -20,6 +20,12 @@ function newGrid(num) {
 
 function clearGrid() {
     let num = prompt("Squares for new grid: ");
+
+    let grid = document.getElementById("container");
+    while (grid.hasChildNodes()) {
+        grid.removeChild(grid.lastChild);
+    }
+
     let boxes = document.querySelectorAll(".grid");
     boxes.forEach(square => {
         square.classList.remove("hovergrid");
